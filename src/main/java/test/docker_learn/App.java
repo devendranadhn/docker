@@ -19,8 +19,10 @@ public class App
     public static void main( String[] args )
     {
     	logger.addAppender(new ConsoleAppender(new SimpleLayout(),"System.out"));
-    	logger.debug("My first log4j log");
-    	logger.info("First Info Message");
-        System.out.println( "Hello World!" );
+    	while(true){
+		logger.debug("My first log4j log");
+    		logger.info("First Info Message");
+        	System.out.println( "Hello World!" );
+	}
     }
 }
